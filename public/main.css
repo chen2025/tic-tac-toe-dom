@@ -1,0 +1,57 @@
+/* Your code here */
+body{
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#win{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 200px 210px 200px;
+    grid-template-rows: 200px 210px 200px;
+    margin-bottom: 40px;
+}
+
+#cell {
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    height: 200px;
+    justify-content: center;
+    width: 200px;
+}
+
+#cell:nth-child(2), #cell:nth-child(5), #cell:nth-child(8){
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+}
+
+#cell:nth-child(4), #cell:nth-child(5), #cell:nth-child(6){
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+#buttons{
+    display: flex;
+    font-size: 40px;
+    justify-content: space-around;
+    margin: 20px;
+    width: 600px;
+}
+
+#newGame, #giveUp{
+    background-color: lightgray;
+    border: 3px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content:center;
+    padding: 20px;
+    width: 190px;
+}
